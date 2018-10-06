@@ -22,6 +22,7 @@
             android:textSize="12sp" />
 
         <EditText
+            android:id="@+id/etUsername"
             android:layout_width="320dp"
             android:layout_height="45dp"
             android:textSize="15sp"
@@ -37,12 +38,14 @@
             android:textSize="12sp" />
 
         <EditText
+            android:id="@+id/etPassword"
             android:layout_width="320dp"
             android:layout_height="45dp"
             android:textSize="15sp"
             android:background="@drawable/etstyle" />
 
         <Button
+            android:id="@+id/btnMasukLogin"
             android:layout_width="320dp"
             android:layout_height="45dp"
             android:textAllCaps="false"
