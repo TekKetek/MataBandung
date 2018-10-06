@@ -1,4 +1,4 @@
-package com.pramudana.sam.matabandung.Model;
+package com.pramudana.sam.matabandung.Model.ListEvent;
 
 import com.google.gson.annotations.SerializedName;
 
