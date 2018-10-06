@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MataBandung.iml" filepath="$PROJECT_DIR$/MataBandung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MataBandungss.iml" filepath="$PROJECT_DIR$/.idea/MataBandungss.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
