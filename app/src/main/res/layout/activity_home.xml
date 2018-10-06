@@ -72,16 +72,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@color/colorPrimary"/>
+                        android:src="@drawable/ic_apps_black_24dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
-                        android:text="Me"
+                        android:text="Apps"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="18sp"
-                        />
+                        android:textSize="12sp" />
 
                 </LinearLayout>
 
@@ -110,16 +109,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@color/colorPrimary"/>
+                        android:src="@drawable/ic_branding_watermark_black_24dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
-                        android:text="Me"
+                        android:text="Adversiting"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="18sp"
-                        />
+                        android:textSize="12sp" />
 
                 </LinearLayout>
 
@@ -148,16 +146,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@color/colorPrimary"/>
+                        android:src="@drawable/ic_build_black_24dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
-                        android:text="Me"
+                        android:text="Architecture"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="18sp"
-                        />
+                        android:textSize="12sp" />
 
                 </LinearLayout>
 
@@ -186,16 +183,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@color/colorPrimary"/>
+                        android:src="@drawable/ic_brush_black_24dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
-                        android:text="Me"
+                        android:text="Arts"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="18sp"
-                        />
+                        android:textSize="12sp" />
 
                 </LinearLayout>
 
@@ -224,16 +220,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@color/colorPrimary"/>
+                        android:src="@drawable/ic_room_service_black_24dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
-                        android:text="Me"
+                        android:text="Cullinary"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="18sp"
-                        />
+                        android:textSize="12sp" />
 
                 </LinearLayout>
 
@@ -262,16 +257,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@color/colorPrimary"/>
+                        android:src="@drawable/ic_spa_black_24dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAlignment="center"
-                        android:text="Me"
+                        android:text="Fshion"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="18sp"
-                        />
+                        android:textSize="12sp" />
 
                 </LinearLayout>
 
