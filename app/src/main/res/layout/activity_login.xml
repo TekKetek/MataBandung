@@ -49,7 +49,7 @@
             android:textColor="#5e5b5b"
             android:layout_marginTop="30dp"
             android:background="@drawable/buttonselector"
-            android:text="Masuk"/>
+            android:text="Mashuk pak ekooo"/>
 
         <TextView
             android:layout_width="match_parent"
