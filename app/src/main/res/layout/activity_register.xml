@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.pramudana.sam.matabandung.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="40dp"
+            android:text="First Name :"
+            android:textSize="12sp" />
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/etstyle" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="40dp"
+            android:text="Last Name :"
+            android:textSize="12sp" />
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/etstyle" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="40dp"
+            android:text="Email :"
+            android:textSize="12sp" />
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/etstyle" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="40dp"
+            android:text="Password :"
+            android:textSize="12sp" />
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/etstyle" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="40dp"
+            android:text="Confirm Password :"
+            android:textSize="12sp" />
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/etstyle" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="40dp"
+            android:text="Company Name :"
+            android:textSize="12sp" />
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/etstyle" />
+
+        <Button
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textAllCaps="false"
+            android:textColor="#5e5b5b"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonselector"
+            android:text="Daftar"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

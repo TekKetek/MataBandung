@@ -7,27 +7,40 @@
     android:background="@color/colorPrimary"
     tools:context="com.pramudana.sam.matabandung.LoginActivity">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
 
-        <EditText
-            android:layout_width="320dp"
-            android:layout_height="45dp"
-            android:textSize="15sp"
-            android:background="@drawable/etstyle"
-            android:hint="Username"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="40dp"
+            android:text="Username :"
+            android:textSize="12sp" />
 
         <EditText
             android:layout_width="320dp"
             android:layout_height="45dp"
             android:textSize="15sp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/etstyle"
-            android:hint="Password"/>
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/etstyle" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="40dp"
+            android:text="Password :"
+            android:textSize="12sp" />
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:textSize="15sp"
+            android:background="@drawable/etstyle" />
 
         <Button
             android:layout_width="320dp"
