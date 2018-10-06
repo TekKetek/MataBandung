@@ -22,6 +22,7 @@
             android:textSize="12sp" />
 
         <EditText
+            android:id="@+id/etFirstName"
             android:layout_width="320dp"
             android:layout_height="45dp"
             android:textSize="15sp"
@@ -37,6 +38,7 @@
             android:textSize="12sp" />
 
         <EditText
+            android:id="@+id/etLastName"
             android:layout_width="320dp"
             android:layout_height="45dp"
             android:textSize="15sp"
@@ -52,6 +54,7 @@
             android:textSize="12sp" />
 
         <EditText
+            android:id="@+id/etEmail"
             android:layout_width="320dp"
             android:layout_height="45dp"
             android:textSize="15sp"
@@ -67,6 +70,7 @@
             android:textSize="12sp" />
 
         <EditText
+            android:id="@id/etPassword"
             android:layout_width="320dp"
             android:layout_height="45dp"
             android:textSize="15sp"
@@ -82,6 +86,7 @@
             android:textSize="12sp" />
 
         <EditText
+            android:id="@+id/etconfirmPassword"
             android:layout_width="320dp"
             android:layout_height="45dp"
             android:textSize="15sp"
@@ -97,6 +102,7 @@
             android:textSize="12sp" />
 
         <EditText
+            android:id="@+id/etcompanyName"
             android:layout_width="320dp"
             android:layout_height="45dp"
             android:textSize="15sp"
@@ -104,6 +110,7 @@
             android:background="@drawable/etstyle" />
 
         <Button
+            android:id="@+id/btnMasuk"
             android:layout_width="320dp"
             android:layout_height="45dp"
             android:textAllCaps="false"
