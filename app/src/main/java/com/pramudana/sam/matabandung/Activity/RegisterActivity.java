@@ -1,4 +1,4 @@
-package com.pramudana.sam.matabandung;
+package com.pramudana.sam.matabandung.Activity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -18,6 +18,8 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import retrofit2.Callback;
 import retrofit2.Response;
+
+import com.pramudana.sam.matabandung.R;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -81,7 +83,8 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onResponse(retrofit2.Call<ResponseRegister> call, Response<ResponseRegister> response) {
                 dialog.dismiss();
-                if (response.body().getData().equals("1")) {
+                int result = response.body().getStatus();
+                if (result == 200) {
                     Toast.makeText(RegisterActivity.this, ""+response.body().getMessage(), Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                 } else {

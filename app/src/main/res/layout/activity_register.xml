@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context="com.pramudana.sam.matabandung.RegisterActivity">
+    tools:context="com.pramudana.sam.matabandung.Activity.RegisterActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

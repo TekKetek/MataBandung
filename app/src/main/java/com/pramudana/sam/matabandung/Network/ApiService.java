@@ -2,6 +2,7 @@ package com.pramudana.sam.matabandung.Network;
 
 import com.pramudana.sam.matabandung.Model.ListEvent.DetailsEvent.ResponseDetailsEvent;
 import com.pramudana.sam.matabandung.Model.ListEvent.ResponseListEvent;
+import com.pramudana.sam.matabandung.Model.Login.ResponseLogin;
 import com.pramudana.sam.matabandung.Model.Register.ResponseRegister;
 import com.pramudana.sam.matabandung.Model.Tenant.Data.ResponseDataTenant;
 import com.pramudana.sam.matabandung.Model.Tenant.Detail.ResponseDetail;
@@ -30,14 +31,22 @@ public interface ApiService {
     Call<ResponseDetail> detailTenant();
 
     @FormUrlEncoded
-    @POST("registeruser.php")
+    @POST("api/v1/public/client/register")
+    Call<ResponseLogin> response_login(
+            @Field("password") String username,
+            @Field("username") String password
+            );
+
+
+    @FormUrlEncoded
+    @POST("api/v1/public/client/register")
     Call<ResponseRegister> response_register(
-            @Field("vsnamadepan") String namadepan,
-            @Field("vsnamaakhir") String namaakhir,
-            @Field("vscompany") String company,
-            @Field("vsemail") String email,
-            @Field("vspassword") String password,
-            @Field("vspassword passwordconfirmation") String passwordconfirmation
+            @Field("client_first_name") String namadepan,
+            @Field("client_last_name") String namaakhir,
+            @Field("client_email") String company,
+            @Field("client_password") String email,
+            @Field("client_password_confirmation ") String password,
+            @Field("company_name") String passwordconfirmation
     );
 
 
