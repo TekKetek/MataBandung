@@ -40,6 +40,8 @@ public class RegisterActivity extends AppCompatActivity {
 
     String strNamaDepan, strNamaAkhir, strEmail, strPassword, strCompany, strPassConfirm;
 
+    String accesskey = "fe00a11d02f3e3ced53486ff3f6e3b";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,7 +80,7 @@ public class RegisterActivity extends AppCompatActivity {
     private void registerUser() {
         final ProgressDialog dialog = ProgressDialog.show(RegisterActivity.this, "Loading...", "");
         ApiService api = InstanceRetrofit.getInstance();
-        retrofit2.Call<ResponseRegister> call = api.response_register(strNamaDepan, strNamaAkhir, strEmail, strPassword, strCompany, strPassConfirm);
+        retrofit2.Call<ResponseRegister> call = api.response_register(accesskey,strNamaDepan, strNamaAkhir, strEmail, strPassword, strCompany, strPassConfirm);
         call.enqueue(new Callback<ResponseRegister>() {
             @Override
             public void onResponse(retrofit2.Call<ResponseRegister> call, Response<ResponseRegister> response) {

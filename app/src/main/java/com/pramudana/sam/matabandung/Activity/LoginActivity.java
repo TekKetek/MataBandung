@@ -38,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
 
     Context context;
     String strusername,strpassword;
+    String accesskey = "fe00a11d02f3e3ced53486ff3f6e3b";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,20 +70,20 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void loginUserr() {
-        final ProgressDialog dialog = new ProgressDialog(this);
-        dialog.setTitle("Tunggu");
-        dialog.setIndeterminate(true);
-        dialog.show();
+//        final ProgressDialog dialog = new ProgressDialog(this);
+//        dialog.setTitle("Tunggu");
+//        dialog.setIndeterminate(true);
+//        dialog.show();
 
         ApiService api = InstanceRetrofit.getInstance();
-        Call<ResponseLogin> call = api.response_login (strusername,strpassword);
+        Call<ResponseLogin> call = api.response_login (accesskey,strusername,strpassword);
 
         call.enqueue(new Callback<ResponseLogin>() {
             @Override
             public void onResponse(Call<ResponseLogin> call, Response<ResponseLogin> response) {
-                dialog.dismiss();
-                int result = response.body().getStatus();
-                if (result == 200){
+//                dialog.dismiss();
+                String result = response.body().getMessage();
+                if (result.equalsIgnoreCase("success")){
                     Toast.makeText(LoginActivity.this,""+result, Toast.LENGTH_SHORT).show();
 //                    sessionManager.createSession(strusername);
                     startActivity(new Intent(getApplicationContext(),LoginActivity.class));
@@ -93,7 +94,7 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<ResponseLogin> call, Throwable t) {
-                dialog.dismiss();
+//                dialog.dismiss();
                 Toast.makeText(LoginActivity.this,""+t.getMessage(), Toast.LENGTH_SHORT);
             }
         });
