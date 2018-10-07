@@ -42,7 +42,7 @@ public interface ApiService {
     );
 
     @FormUrlEncoded
-    @POST("api/v1/public/client/register")
+    @POST("api/v1/public/client/login")
     Call<ResponseLogin> response_login(
             @Header("access-key") String accesskey,
             @Field("password") String username,

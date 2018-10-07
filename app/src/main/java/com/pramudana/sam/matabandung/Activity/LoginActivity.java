@@ -18,6 +18,8 @@ import com.pramudana.sam.matabandung.Network.ApiService;
 import com.pramudana.sam.matabandung.Network.InstanceRetrofit;
 import com.pramudana.sam.matabandung.R;
 
+import java.util.List;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -82,13 +84,13 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<ResponseLogin> call, Response<ResponseLogin> response) {
 //                dialog.dismiss();
-                String result = response.body().getMessage();
-                if (result.equalsIgnoreCase("success")){
-                    Toast.makeText(LoginActivity.this,""+result, Toast.LENGTH_SHORT).show();
+//                List<Object> error = response.body().getErrors();
+                if (response.body().getStatus() == 200){
+//                    Toast.makeText(LoginActivity.this,""+error, Toast.LENGTH_SHORT).show();
 //                    sessionManager.createSession(strusername);
-                    startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+                    startActivity(new Intent(getApplicationContext(),HomeActivity.class));
                 }else{
-                    Toast.makeText(LoginActivity.this, ""+result, Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(LoginActivity.this, ""+error, Toast.LENGTH_SHORT).show();
                 }
             }
 
