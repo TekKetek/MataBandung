@@ -61,7 +61,5 @@ public interface ApiService {
             @Field("client_password_confirmation ") String passwordconf,
             @Field("company_name")String companyName
     );
-
-
 }
 
